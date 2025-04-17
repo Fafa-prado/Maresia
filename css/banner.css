@@ -1,0 +1,68 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  .slides {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .progress-bar-container {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    width: fit-content;
+    z-index: 10;
+  }
+  
+  .progress-bar {
+    width: 60px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .progress-bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: white;
+    width: 0%;
+    transition: width 5s linear; /* A animação padrão */
+  }
+  
+  .progress-bar.active::before {
+    width: 100%; /* A barra ativa vai preencher com 100% */
+  }
+  
+  /* .progress-bar.active::before {
+    width: 100%;
+  }
+   */

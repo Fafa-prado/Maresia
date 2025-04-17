@@ -1,0 +1,136 @@
+/* Aplica a fonte padrão */
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  font-family: "Arial", sans-serif; /* Fonte padrão */
+  font-optical-sizing: auto;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+/* Seção de cadastro */
+.containerCD {
+  margin-inline: auto;
+  padding-inline: 50px;
+  background-color: rgb(224, 233, 241);
+  padding-bottom: 30px; /* Adiciona padding para não sobrepor */
+}
+
+/* Estilo do título */
+.titulo {
+  color: #04469c;
+  font-weight: 35;
+  letter-spacing: 5px;
+  margin-bottom: 7px;
+  padding-top: 50px;
+  font-size: 50px;
+}
+
+/* Texto adicional */
+.texto {
+  font-weight: 150;
+  font-size: 16px;
+  width: 675px;
+  word-spacing: 10px;
+  color: #002947;
+  padding-top: 20px;
+  text-align: left;
+}
+
+/* Campo de input */
+.campo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 10px 0;
+  text-align: left;
+  font-family: 'IM Fell English', serif;
+  margin-top: 35px;
+  color: #002947;
+}
+
+input {
+  width: 650px;
+  border: none;
+  border-bottom: 0.7px solid #002947;
+  padding: 5px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  background-color: rgb(224, 233, 241);
+}
+
+/* Estilo do botão */
+.botão {
+  border-radius: 70px;
+  background-color: #3087d8;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 13px;
+  font-family: 'IM Fell English', serif;
+  width: 250px; /* Aumenta a largura do botão */
+  height: 80px; /* Aumenta a altura do botão */
+}
+
+/* Seção da grade de imagens */
+.containerPR {
+  display: flex;
+  max-width: 1400px; /* Aumenta a largura da seção */
+  height: 600px; /* Aumenta a altura */
+  margin: 25px auto; /* Garante que tenha espaço para não sobrepor */
+  overflow: hidden;
+  padding-top: 40px;
+  position: relative; /* Evita sobreposição com outras seções */
+
+}
+
+.image-grid {
+  display: grid;
+  grid-template-areas:
+    "img1 img2 img3"
+    "img1 img4 img5"
+    "img1 img6 img5";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px; /* Aumenta a altura das células da grade */
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative; /* Garante que a grade fique bem posicionada */
+}
+
+.image-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+/* Áreas do grid */
+.img1 { grid-area: img1; }
+.img2 { grid-area: img2; }
+.img3 { grid-area: img3; }
+.img4 { grid-area: img4; }
+.img5 { grid-area: img5; }
+.img6 { grid-area: img6; }
+
+.side-text {
+  /* font-family: "Edu AU VIC WA NT Arrows", cursive; */
+  font-size: 28px; /* Aumenta o tamanho do texto lateral */
+  font-weight: bold;
+  color: white;
+  background-color: #214a53;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

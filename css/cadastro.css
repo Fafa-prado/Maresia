@@ -1,0 +1,74 @@
+/* Aplica a fonte IM Fell DW Pica a todo o body */
+body {
+    overflow-x: hidden;
+}
+
+/* Estilos para a seção de cadastro */
+.containerCD {
+    margin-inline: auto;
+    padding-inline: 180px;
+    background-color: #23535441;
+    padding-bottom: 20px;
+}
+
+/* Estilos para o título */
+.titulo {
+    color: #203c3f;
+    font-weight: 35;
+    letter-spacing: 5px;
+    margin-bottom: 7px;
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: serif, 'IM Fell DW Pica';
+}
+
+/* Estilos para o texto adicional */
+.texto {
+    font-weight: 150;
+    font-size: 16px;
+    width: 675px;
+    word-spacing: 10px;
+    color: #002947;
+    padding-top: 20px;
+    text-align: left;
+    font-family: serif, 'IM Fell DW Pica';
+}
+
+/* Estilos para o campo de input */
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 10px 0;
+    text-align: left;
+    margin-top: 35px;
+    color: #002947;
+}
+
+/* Estilos para os inputs */
+input {
+    width: 650px;
+    border: none;
+    border-bottom: 0.7px solid #002947;
+    padding: 5px;
+    font-size: 16px;
+    outline: none;
+    text-align: center;
+    background-color: #23535400;
+    font-family: 'Copper Hewitt', sans-serif;
+    
+}
+
+/* Estilos para o botão */
+.botão {
+    border-radius: 70px;
+    background-color: #106f709c;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 200px;
+    height: 70px;
+}

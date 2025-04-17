@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Topo */
+.topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    box-shadow: 3px 3px 3px 2px rgba(65, 83, 109, 0.2);
+    z-index: 999; /* Garante que o topo fique acima de outros conteúdos */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icone-menu {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.texto-menu {
+    font-size: 14px;
+    color: black;
+    font-family: 'Cooper Hewitt', sans-serif;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-foto {
+    max-height: 150px;
+    width: auto;
+}
+
+.acoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icone-conta {
+    width: 24px;
+    height: 24px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.icone-carrinho {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.texto-entrar {
+    color: black;
+    font-size: 14px;
+    font-family: 'Cooper Hewitt', sans-serif;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none; 
+}
+
+.separador {
+    font-size: 20px;
+    margin: 0 10px;
+    color: black;
+}
+
+/* Menu Lateral */
+
+.menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100vh;
+    background-color:  #173136;
+    color: white;
+    transition: left 0.3s ease;
+    /* padding: 10px 20px 20px 20px; <-- alterado para subir os ícones */
+    box-sizing: border-box;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+/* .menu-fechar:hover {
+    color: #fff;
+} */
+
+.menu-lateral nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral nav ul li {
+    margin-bottom: 10px;
+}
+
+.menu-lateral a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Cooper Hewitt', sans-serif; /* <-- fonte igual à de "Produtos" */
+    display: block;
+    padding: 8px 10px;
+    border-radius: 1px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-lateral a:hover {
+    background-color: #214a53;
+    color: #ffd9a1;
+    font-weight: bold;
+    /* transition-duration: 1.2s; */
+}
+
+.menu-fechar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1px 22px 1px 20px; 
+    align-self: flex-start;
+    height: 40px;
+    margin-top: 2px;
+}
+
+.menu-links {
+    width: 200px;
+}
+
+#x, .menu-fechar2 {
+    font-size: 28px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 7px; */
+}
+
+.icone-menu img {
+    padding: 2px;
+    gap: 5px
+}
+
+/* Submenus */
+.submenu-toggle {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 8px 10px;
+    /* border-radius: 5px; */
+    transition: background 0.3s, color 0.3s;
+}
+
+.submenu-toggle:hover {
+    color: #ffd9a1;
+    font-weight: bold;
+    background-color: #214a53;
+}
+
+/* Estado ativo - quando clicado */
+.submenu-toggle.ativo {
+    background-color: #214a53;  /* fundo ao clicar */
+    color: #ffd9a1;             /* fonte ao clicar */
+    font-weight: bold;
+}
+
+.submenu {
+    display: none;
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.submenu.mostrar {
+    display: block;
+    animation: deslizar 0.3s ease-in-out;
+}
+
+@keyframes deslizar {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

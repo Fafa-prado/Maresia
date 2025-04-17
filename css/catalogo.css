@@ -1,0 +1,122 @@
+/* corpo do texto */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+/* titulos */
+/* @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap'); */
+
+/* .abel-regular {
+    
+} */
+
+#catalogo {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.containerCA {
+    /* max-width: 1200px; */
+    margin-inline: auto;
+    padding-inline: 180px;
+}
+
+/* GRADE UM */
+.gradeUm {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    justify-content: space-between;
+    padding-inline: 40px;
+    margin-bottom: 25px;
+}
+
+#tittleCA {
+    /* font-family: 'IM Fell ', serif; */
+    /* font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal; */
+    font-family: serif, 'IM Fell DW Pica';
+    color: #203c3f;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+/* PRODUTO */
+.produto {
+    width: 300px;
+}
+
+#img {
+    height: 450px;
+    box-shadow: 2px 2px 2px 1px rgba(65, 83, 109, 0.2) ;
+    width: 345px;
+}
+
+.descricao {
+    display: inline-block;
+    width: 345px;
+    position: relative;
+}
+
+.descricao h1 {
+    font-family: "Abel", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    color: #6b6161;
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+
+.cores {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.cor1 {
+    background-color: #4f78ad;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin-right: 7px;
+}
+
+.cor2 {
+    background-color: #ff9f9f;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.preco h1 {
+    color: black;
+    display: flex;
+    justify-content: end;
+    font-size: 19px;
+    /* font-style:oblique; */
+    font-weight: 600;
+}
+
+/* GRADE DOIS */
+
+.gradeDois {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
+    gap: 30px; /* Espaçamento entre os produtos */
+    justify-content: space-between;
+    padding-inline: 40px;
+    margin-bottom: 25px;
+}
+
+#tittleCA {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #004aad;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
