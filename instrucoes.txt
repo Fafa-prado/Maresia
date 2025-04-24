@@ -1,0 +1,8 @@
+lista de cores
+
+cor1 - bege #cca981
+cor2 - preto #000000
+cor3 - marrom avermelhado #992e04
+cor4 - verde água escuro #0c6f72
+cor5 - vinho #720c2e
+cor6 - branco #ffff

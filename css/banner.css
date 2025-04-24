@@ -55,14 +55,22 @@
     height: 100%;
     background: white;
     width: 0%;
-    transition: width 5s linear; /* A animação padrão */
+    transition: width 5000ms linear; /* A animação padrão */
   }
   
   .progress-bar.active::before {
     width: 100%; /* A barra ativa vai preencher com 100% */
+    transition: width 5000ms linear; /* Inicia a animação */
+  }
+
+  .progress-bar.reset::before {
+    width: 0%; /* Reseta o width */
+    transition: none; /* Remove a animação */
   }
   
   /* .progress-bar.active::before {
     width: 100%;
   }
    */
+
+   

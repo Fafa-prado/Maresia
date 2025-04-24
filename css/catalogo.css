@@ -1,13 +1,6 @@
 /* corpo do texto */
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
-/* titulos */
-/* @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap'); */
-
-/* .abel-regular {
-    
-} */
-
 #catalogo {
     display: grid;
     grid-template-columns: 1fr;
@@ -18,44 +11,34 @@
 .containerCA {
     /* max-width: 1200px; */
     margin-inline: auto;
-    padding-inline: 180px;
+    padding-inline: 150px;
+    background-color: #f8f8f8;
 }
 
 /* GRADE UM */
-.gradeUm {
+.gradeUm, .gradeDois {
     display: flex;
     flex-wrap: wrap; 
-    gap: 30px;
+    gap: 60px;
     justify-content: space-between;
-    padding-inline: 40px;
+    /* padding-inline: 40px; */
     margin-bottom: 25px;
-}
-
-#tittleCA {
-    /* font-family: 'IM Fell ', serif; */
-    /* font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal; */
-    font-family: serif, 'IM Fell DW Pica';
-    color: #203c3f;
-    font-size: 50px;
-    margin-bottom: 50px;
 }
 
 /* PRODUTO */
 .produto {
-    width: 300px;
+    width: 300px
 }
 
 #img {
     height: 450px;
-    box-shadow: 2px 2px 2px 1px rgba(65, 83, 109, 0.2) ;
-    width: 345px;
+    box-shadow: 2px 2px 7px 5px rgba(65, 83, 109, 0.2) ;
+    width: 325px;
 }
 
 .descricao {
     display: inline-block;
-    width: 345px;
+    width: 325px;
     position: relative;
 }
 
@@ -66,8 +49,9 @@
     display: flex;
     justify-content: center;
     color: #6b6161;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     font-size: 20px;
+    margin-top: 4px;
 }
 
 .cores {
@@ -77,46 +61,71 @@
 }
 
 .cor1 {
-    background-color: #4f78ad;
-    width: 25px;
-    height: 25px;
+    background-color: #cca981;
+    width: 22px;
+    height: 22px;
     border-radius: 100%;
-    margin-right: 7px;
+    margin-right: 5px;
 }
 
 .cor2 {
-    background-color: #ff9f9f;
-    width: 25px;
-    height: 25px;
+    background-color: #000000;
+    width: 22px;
+    height: 22px;
     border-radius: 100%;
+    margin-right: 5px;
+}
+
+.cor3 {
+    background-color: #992e04;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.cor4 {
+    background-color: #0c6f72;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.cor5 {
+    background-color: #720c2e;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.cor6 {
+    background-color: #ffff;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: 0.2px solid rgb(197, 197, 197);
+    margin-right: 5px;
 }
 
 .preco h1 {
     color: black;
     display: flex;
     justify-content: end;
-    font-size: 19px;
+    font-size: 17px;
     /* font-style:oblique; */
     font-weight: 600;
 }
 
 /* GRADE DOIS */
 
-.gradeDois {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha, se necessário */
-    gap: 30px; /* Espaçamento entre os produtos */
-    justify-content: space-between;
-    padding-inline: 40px;
-    margin-bottom: 25px;
-}
-
 #tittleCA {
-    font-family: "Cormorant Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    color: #004aad;
+    color: #203c3f;
+    font-weight: 35;
+    letter-spacing: 5px;
+    margin-bottom: 7px;
     font-size: 50px;
-    margin-bottom: 50px;
+    font-family: serif, 'IM Fell DW Pica';
+    font-weight: 500;
 }

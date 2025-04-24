@@ -1,4 +1,3 @@
-/* Aplica a fonte padrão */
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
 
 body {
@@ -11,112 +10,88 @@ body {
   overflow-x: hidden;
 }
 
-/* Seção de cadastro */
-.containerCD {
-  margin-inline: auto;
-  padding-inline: 50px;
-  background-color: rgb(224, 233, 241);
-  padding-bottom: 30px; /* Adiciona padding para não sobrepor */
-}
-
-/* Estilo do título */
-.titulo {
-  color: #04469c;
-  font-weight: 35;
-  letter-spacing: 5px;
-  margin-bottom: 7px;
-  padding-top: 50px;
-  font-size: 50px;
-}
-
-/* Texto adicional */
-.texto {
-  font-weight: 150;
-  font-size: 16px;
-  width: 675px;
-  word-spacing: 10px;
-  color: #002947;
-  padding-top: 20px;
-  text-align: left;
-}
-
-/* Campo de input */
-.campo {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  margin: 10px 0;
-  text-align: left;
-  font-family: 'IM Fell English', serif;
-  margin-top: 35px;
-  color: #002947;
-}
-
-input {
-  width: 650px;
-  border: none;
-  border-bottom: 0.7px solid #002947;
-  padding: 5px;
-  font-size: 16px;
-  outline: none;
-  text-align: center;
-  background-color: rgb(224, 233, 241);
-}
-
-/* Estilo do botão */
-.botão {
-  border-radius: 70px;
-  background-color: #3087d8;
-  color: white;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  margin-top: 15px;
-  font-size: 13px;
-  font-family: 'IM Fell English', serif;
-  width: 250px; /* Aumenta a largura do botão */
-  height: 80px; /* Aumenta a altura do botão */
-}
-
 /* Seção da grade de imagens */
 .containerPR {
   display: flex;
   max-width: 1400px; /* Aumenta a largura da seção */
-  height: 600px; /* Aumenta a altura */
+  /* height: 600px; Aumenta a altura */
   margin: 25px auto; /* Garante que tenha espaço para não sobrepor */
   overflow: hidden;
   padding-top: 40px;
   position: relative; /* Evita sobreposição com outras seções */
-
 }
 
 .image-grid {
   display: grid;
-  grid-template-areas:
-    "img1 img2 img3"
-    "img1 img4 img5"
-    "img1 img6 img5";
+  /* grid-template-areas:
+    "img1 img1 img1"
+    "img2 img4 img5"
+    "img3 img6 img5"; */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 200px 200px 200px; /* Aumenta a altura das células da grade */
   gap: 15px;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   margin-left: 15px;
   margin-right: 15px;
   position: relative; /* Garante que a grade fique bem posicionada */
 }
 
+.image-link {
+  position: relative; /* Necessário para o posicionamento do overlay */
+  display: block; /* Torna o link um bloco para envolver a imagem completamente */
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
 .image-grid img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço da grade */
   display: block;
   border-radius: 0;
+  transition: opacity 0.3s ease-in-out; /* Transição suave */
+}
+
+/* Efeito de escurecimento na imagem */
+.image-link:hover img {
+  opacity: 0.5; /* Escurece a imagem */
+}
+
+.image-link:nth-of-type(1) {
+  grid-row: 1/4;
+}
+
+.image-link:nth-of-type(5) {
+  grid-row: 2/4;
+  grid-column: 3/4;
+}
+
+/* O texto dentro do overlay */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centraliza o texto */
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  visibility: hidden; /* Inicialmente invisível */
+  opacity: 0; /* Inicialmente invisível */
+  transition: opacity 0.3s ease-in-out; /* Transição suave */
+  text-align: center;
+}
+
+/* Mostrar o texto ao passar o mouse */
+.image-link:hover .overlay {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Áreas do grid */
-.img1 { grid-area: img1; }
+.img1 {
+  grid-area: img1; /* img1 ocupa as 3 áreas horizontais na primeira linha */
+}
+
 .img2 { grid-area: img2; }
 .img3 { grid-area: img3; }
 .img4 { grid-area: img4; }
@@ -124,7 +99,6 @@ input {
 .img6 { grid-area: img6; }
 
 .side-text {
-  /* font-family: "Edu AU VIC WA NT Arrows", cursive; */
   font-size: 28px; /* Aumenta o tamanho do texto lateral */
   font-weight: bold;
   color: white;
@@ -133,4 +107,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Unlock", serif;
+  font-weight: 400;
+  font-style: normal;
 }

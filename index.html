@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -41,9 +42,6 @@
                 <img src="img/sacolas-de-compras.png" alt="Carrinho" class="icone-carrinho">
             </div>
         </div>
-
-
-       
 
         <!-- Menu lateral -->
         <div class="menu-lateral" id="menuLateral">
@@ -105,150 +103,168 @@
     </header>
 
     <main>
+
+        <section class="containerSL">
+            <div class="prev" onclick="plusSlides(-1)">❮</div>
+            <div class="slidersection">
+              <div class="card">
+                <img src="img/f1.png" alt="1">
+                <p>CATEGORIA 1</p>
+              </div>
+              <div class="card">
+                <img src="img/f2.png" alt="2">
+                <p>CATEGORIA 2</p>
+              </div>
+              <div class="card">
+                <img src="img/f3.png" alt="3">
+                <p>CATEGORIA 3</p>
+              </div>
+              <div class="card">
+                <img src="img/f4.png" alt="4">
+                <p>CATEGORIA 4</p>
+              </div>
+            </div>
+            <div class="slidersection">
+                <div class="card">
+                  <img src="img/f5.png" alt="5">
+                  <p>CATEGORIA 5</p>
+                </div>
+                <div class="card">
+                  <img src="img/f6.png" alt="6">
+                  <p>CATEGORIA 6</p>
+                </div>
+                <div class="card">
+                  <img src="img/f7.png" alt="7">
+                  <p>CATEGORIA 7</p>
+                </div>
+              </div>
+            <div class="next" onclick="plusSlides(1)">❯</div>
+        </section>
+
         <section id="catalogo">
             <div class="containerCA">
                 <h2 id="tittleCA">NOVIDADES</h2>
                 <div class="gradeUm">
                     <div class="produto">
-                        <img src="img/tamancoDeDedoBicoQuadrado.webp" id="img">
-
+                        <a href="#"> <!-- Adiciona o link aqui -->
+                            <img src="img/vestido-saida-de-praia-tricot.png" id="img">
+                        </a>
                         <div class="descricao">
-                            <h1>Vestido creme</h1>
-
+                            <h1>Vestido saída de praia tricot</h1>
                             <div class="cores">
                                 <div class="cor1"></div>
                                 <div class="cor2"></div>
-                                <div class="cor3"></div>
                             </div>
-
                             <div class="preco">
                                 <h1>R$ 132,11</h1>
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="produto">
-                        <img src="img/114b4ccb4de0c5fd55c40fe984d98266.jpg" id="img">
-
+                        <a href="#"> <!-- Adiciona o link aqui -->
+                            <img src="img/rasteirinha.png" id="img">
+                        </a>
                         <div class="descricao">
-                            <h1>Vestido creme</h1>
-
+                            <h1>Rasteirinha salto baixíssimo</h1>
                             <div class="cores">
-                                <div class="cor1"></div>
-                                <div class="cor2"></div>
                                 <div class="cor3"></div>
                             </div>
-
                             <div class="preco">
                                 <h1>R$ 132,11</h1>
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="produto">
-                        <img src="img/produtoGenerico.jpg" id="img">
-
+                        <a href="#"> <!-- Adiciona o link aqui -->
+                            <img src="img/chapeu-de-praia.png" id="img">
+                        </a>
                         <div class="descricao">
-                            <h1>Vestido creme</h1>
-
+                            <h1>Chapéu de palha sintética trançado</h1>
                             <div class="cores">
                                 <div class="cor1"></div>
-                                <div class="cor2"></div>
-                                <div class="cor3"></div>
                             </div>
-
                             <div class="preco">
                                 <h1>R$ 132,11</h1>
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="produto">
-                        <img src="img/produtoGenerico.jpg" id="img">
-
+                        <a href="#"> <!-- Adiciona o link aqui -->
+                            <img src="img/biquini-tanga-lacinho.png" id="img">
+                        </a>
                         <div class="descricao">
-                            <h1>Vestido creme</h1>
-
+                            <h1>Biquíni tanga lacinho</h1>
                             <div class="cores">
-                                <div class="cor1"></div>
+                                <div class="cor4"></div>
+                                <div class="cor5"></div>
                                 <div class="cor2"></div>
-                                <div class="cor3"></div>
                             </div>
-
                             <div class="preco">
                                 <h1>R$ 132,11</h1>
                             </div>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="gradeDois">
                     <div class="produto">
-                        <img src="img/produtoGenerico.jpg" id="img">
-
+                        <a href="#"> <!-- Adiciona o link aqui -->
+                            <img src="img/vestido-saida-de-praia-branca.png" id="img">
+                        </a>
                         <div class="descricao">
-                            <h1>Vestido creme</h1>
-
+                            <h1>Vestido leve saída de praia decote cruzado</h1>
                             <div class="cores">
-                                <div class="cor1"></div>
-                                <div class="cor2"></div>
-                                <div class="cor3"></div>
+                                <div class="cor6"></div>
                             </div>
-
                             <div class="preco">
                                 <h1>R$ 132,11</h1>
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="produto">
-                        <img src="img/rasteirinhaFlatformTirasTrançadas.webp" id="img">
-
+                        <a href="#"> <!-- Adiciona o link aqui -->
+                            <img src="img/oculos-escuros.png" id="img">
+                        </a>
                         <div class="descricao">
-                            <h1>Vestido creme</h1>
-
+                            <h1>Óculos escuro caramelo quadrado unisex</h1>
                             <div class="cores">
-                                <div class="cor1"></div>
-                                <div class="cor2"></div>
                                 <div class="cor3"></div>
                             </div>
-
                             <div class="preco">
                                 <h1>R$ 132,11</h1>
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="produto">
-                        <img src="img/produtoGenerico.jpg" id="img">
-
+                        <a href="#"> <!-- Adiciona o link aqui -->
+                            <img src="img/vestido-curto.png" id="img">
+                        </a>
                         <div class="descricao">
-                            <h1>Vestido creme</h1>
-
+                            <h1>Vestido estampado curto</h1>
                             <div class="cores">
-                                <div class="cor1"></div>
-                                <div class="cor2"></div>
-                                <div class="cor3"></div>
+                                <div class="cor5"></div>
                             </div>
-
                             <div class="preco">
                                 <h1>R$ 132,11</h1>
                             </div>
                         </div>
                     </div>
-
+        
                     <div class="produto">
-                        <img src="img/produtoGenerico.jpg" id="img">
-
+                        <a href="#"> <!-- Adiciona o link aqui -->
+                            <img src="img/bolsa-termica.png" id="img">
+                        </a>
                         <div class="descricao">
-                            <h1>Vestido creme</h1>
-
+                            <h1>Bolsa acolchoada térmica para praia</h1>
                             <div class="cores">
                                 <div class="cor1"></div>
                                 <div class="cor2"></div>
-                                <div class="cor3"></div>
                             </div>
-
                             <div class="preco">
                                 <h1>R$ 132,11</h1>
                             </div>
@@ -257,18 +273,38 @@
                 </div>
             </div>
         </section>
+        
 
         <div class="containerPR">
             <div class="image-grid">
-              <img src="img//lenço-de-cabelo.jpg" class="img1" alt="Imagem 1">
-              <img src="img/bolsa.jpg" class="img2" alt="Imagem 2">
-              <img src="img/sandalia.jpg" class="img3" alt="Imagem 3">
-              <img src="img/img4.png" class="img4" alt="Imagem 4">
-              <img src="img/sandalia.jpg" class="img5" alt="Imagem 5">
-              <img src="img/img6.png" class="img6" alt="Imagem 6">
+              <a href="link1.html" class="image-link">
+                <img src="img/lenço-de-cabelo.jpg" class="img1" alt="Imagem 1">
+                <div class="overlay">Texto Imagem 1</div>
+              </a>
+              <a href="link2.html" class="image-link">
+                <img src="img/bolsa.jpg" class="img2" alt="Imagem 2">
+                <div class="overlay">Texto Imagem 2</div>
+              </a>
+              <a href="link3.html" class="image-link">
+                <img src="img/viseira.jpg" class="img3" alt="Imagem 3">
+                <div class="overlay">Texto Imagem 3</div>
+              </a>
+              <a href="link4.html" class="image-link">
+                <img src="img/saia-crochet.jpg" class="img4" alt="Imagem 4">
+                <div class="overlay">Texto Imagem 4</div>
+              </a>
+              <a href="link5.html" class="image-link">
+                <img src="img/sandalia.png" class="img5" alt="Imagem 5">
+                <div class="overlay">Texto Imagem 5</div>
+              </a>
+              <a href="link6.html" class="image-link">
+                <img src="img/biquini-top.jpg" class="img6" alt="Imagem 6">
+                <div class="overlay">Texto Imagem 6</div>
+              </a>
             </div>
             <div class="side-text">S<br>E<br>U <br><br>S<br>T<br>Y<br>L<br>E</div>
           </div>
+          
 
         <section class="containerCD">
             <h1 class="titulo">CADASTRE-SE</h1>
@@ -360,12 +396,7 @@
                        
                     </div>
                 </div>
-
             </div>
-        
-            <!-- <div id="footer-name">
-                <a href="index.html">©MARESIA</a>
-            </div> -->
         </div>
         
         
@@ -374,6 +405,7 @@
 
     <script src="js/banner.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>
