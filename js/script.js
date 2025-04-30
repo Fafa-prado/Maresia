@@ -1,36 +1,22 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let currentIndex = 0;
-    const slides = document.querySelectorAll(".carousel-container img");
-    const dots = document.querySelectorAll(".dot");
-    const nextButton = document.querySelector(".next");
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slidersection');
+const totalSlides = slides[0].children.length; // Considera o número de cartões na seção
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.classList.remove("active");
-            if (dots[i]) dots[i].classList.remove("active"); // Evita erro caso os dots não existam
-        });
+function showSlide(index) {
+  // Calcula a largura total da slidersection (considerando o gap entre os cards)
+  const slideWidth = slides[0].offsetWidth;
+  const distance = -index * slideWidth;
 
-        slides[index].classList.add("active");
-        if (dots[index]) dots[index].classList.add("active");
-    }
+  // Aplica a transição horizontal
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(${distance}px)`;
+  });
+}
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    }
+function plusSlides(n) {
+  currentSlide = (currentSlide + n + totalSlides) % totalSlides; // Garante que não ultrapasse os limites
+  showSlide(currentSlide);
+}
 
-    function goToSlide(index) {
-        currentIndex = index;
-        showSlide(currentIndex);
-    }
-
-    // Verifica se o botão existe antes de adicionar o evento
-    if (nextButton) {
-        nextButton.addEventListener("click", function () {
-            nextSlide();
-        });
-    }
-
-    // Continua mudando automaticamente a cada 5 segundos
-    setInterval(nextSlide, 5000);
-});
+// Inicializa exibindo o primeiro slide
+showSlide(currentSlide);

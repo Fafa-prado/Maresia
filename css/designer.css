@@ -1,0 +1,8 @@
+.designer {
+    /* height: 5px; */
+    background-color: #45464679;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    max-width: 1400px;
+}

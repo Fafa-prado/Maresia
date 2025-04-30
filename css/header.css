@@ -38,10 +38,11 @@ html, body {
     cursor: pointer;
 }
 
-.texto-menu {
+.texto-menu a{
     font-size: 14px;
     color: black;
     font-family: 'Cooper Hewitt', sans-serif;
+    text-decoration: none;
 }
 
 .logo {
@@ -87,10 +88,11 @@ a {
     text-decoration: none; 
 }
 
-.separador {
+.separador a{
     font-size: 20px;
     margin: 0 10px;
     color: black;
+    text-decoration: none;
 }
 
 /* Menu Lateral */
@@ -130,7 +132,18 @@ a {
     margin-bottom: 10px;
 }
 
-.menu-lateral a {
+.submenu a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Cooper Hewitt', sans-serif; /* <-- fonte igual à de "Produtos" */
+    display: block;
+    padding: 8px 10px;
+    border-radius: 1px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.title {
     color: #ccc;
     text-decoration: none;
     font-size: 16px;
@@ -141,11 +154,17 @@ a {
     transition: background 0.3s, color 0.3s;
 }
 
-.menu-lateral a:hover {
+.submenu a:hover {
     background-color: #214a53;
-    color: #ffd9a1;
-    font-weight: bold;
+    /* color: #91aaaf; */
+    font-weight:550;
     /* transition-duration: 1.2s; */
+}
+
+.title:hover {
+    /* background-color: #193d46; */
+    color: #facb84;
+    font-weight:550;
 }
 
 .menu-fechar-container {
@@ -196,23 +215,23 @@ a {
 }
 
 .submenu-toggle:hover {
-    color: #ffd9a1;
+    color: #facb84;
     font-weight: bold;
-    background-color: #214a53;
+    background-color: #193d46;
 }
 
 /* Estado ativo - quando clicado */
 .submenu-toggle.ativo {
-    background-color: #214a53;  /* fundo ao clicar */
-    color: #ffd9a1;             /* fonte ao clicar */
+    color: #facb84;
     font-weight: bold;
+    background-color: #193d46;
 }
 
 .submenu {
     display: none;
     padding-left: 15px;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 40px;
     color: rgb(0, 0, 0);
 }
 

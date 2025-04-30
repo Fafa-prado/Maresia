@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
 body {
   margin: 0;
@@ -14,11 +15,20 @@ body {
 .containerPR {
   display: flex;
   max-width: 1400px; /* Aumenta a largura da seção */
-  /* height: 600px; Aumenta a altura */
+  height: 600px;
   margin: 25px auto; /* Garante que tenha espaço para não sobrepor */
   overflow: hidden;
-  padding-top: 40px;
+  /* padding-top: 40px; */
   position: relative; /* Evita sobreposição com outras seções */
+}
+
+.img1 {
+  transition: background-color 0.3s ease;
+}
+
+.img1:hover {
+  background-color: #000;
+  color: white;
 }
 
 .image-grid {
@@ -72,13 +82,20 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); /* Centraliza o texto */
-  color: white;
+  color: #214a53;
   font-size: 24px;
-  font-weight: bold;
+  font-family: "Abel", sans-serif;
+  font-weight: 750;
+  font-style: normal;
   visibility: hidden; /* Inicialmente invisível */
   opacity: 0; /* Inicialmente invisível */
   transition: opacity 0.3s ease-in-out; /* Transição suave */
   text-align: center;
+}
+
+.overlay:nth-last-of-type(6) {
+  display: flex;
+  align-items: top;
 }
 
 /* Mostrar o texto ao passar o mouse */

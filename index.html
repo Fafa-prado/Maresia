@@ -10,11 +10,14 @@
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/catalogo.css">
+    <link rel="stylesheet" href="css/designer.css">
     <link rel="stylesheet" href="css/produtos.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/cadastro.css">
 
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
 
     <link rel="shortcut icon" href="img/icon.png">
 
@@ -26,8 +29,8 @@
         <div class="topo">
             <div class="menu">
                 <img src="img/menu-icon-black.png" style="width: 25px; height: 25px;" alt="Menu" class="icone-menu">
-                <span class="separador">|</span>
-                <div class="texto-menu">menu</div>
+                <span class="separador"><a href="#">|</a></span>
+                <div class="texto-menu"><a href="#">menu</a></div>
             </div>
             <div class="logo">
                 <img src="img/imagotipo-bege.png" alt="logo" class="logo-foto">
@@ -52,35 +55,40 @@
         
             <nav class="menu-links">
                 <ul>
-                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#" class="title">Página Inicial</a></li>
                     <li>
-                        <button class="submenu-toggle">Produtos ▾</button>
+                        <button class="submenu-toggle">Produtos</button>
                         <ul class="submenu">
+                            <li><a href="#">Vestidos</a></li>
+                            <li><a href="#">Trajes de banho</a></li>
+                            <li><a href="#">Calçados</a></li>
                             <li><a href="#">Saídas de Praia</a></li>
-                            <li><a href="#">Biquínis</a></li>
+                            <li><a href="#">Sombrinhas</a></li>
+                            <li><a href="#">Shorts</a></li>
+                            <li><a href="#">Bolsas</a></li>
                             <li><a href="#">Adereços</a></li>
                         </ul>
                     </li>
                     <li>
-                        <button class="submenu-toggle">Coleções ▾</button>
+                        <button class="submenu-toggle">Coleções</button>
                         <ul class="submenu">
-                            <li><a href="#">Luxe</a></li>
-                            <li><a href="#">Essencial</a></li>
-                            <li><a href="#">Flora</a></li>
-                            <li><a href="#">Flow</a></li>
+                            <li><a href="#">Mediterrâneo Futurista</a></li>
+                            <li><a href="#">Mar Egeu</a></li>
+                            <li><a href="#">Ondas de Frescor</a></li>
+                            <li><a href="#">Banho de Espuma</a></li>
                         </ul>
                     </li>
                     <li>
-                        <button class="submenu-toggle">Sobre Nós ▾</button>
+                        <button class="submenu-toggle">Sobre Nós</button>
                         <ul class="submenu">
-                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="sobre-nos.html" target="_blank">Quem Somos</a></li>
                             <li><a href="#">Cadastro</a></li>
-                            <li><a href="#">Contatos</a></li>
+                            <li><a href="sobre-nos.html" target="_blank">Contatos</a></li>
                             <li><a href="#">Termos de Uso</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Descontos</a></li>
-                    <li><a href="#">Compras</a></li>
+                    <li><a href="#" class="title">Descontos</a></li>
+                    <li><a href="#" class="title">Compras</a></li>
                 </ul>
             </nav>
         </div>
@@ -88,10 +96,10 @@
         
         <section class="banner">
             <div class="slides">
-              <img src="img/diving.jpg" class="slide active" alt="Diving">
-              <img src="img/harbor.jpg" class="slide" alt="Harbor">
-              <img src="img/isla.jpg" class="slide" alt="Isla">
-              <img src="img/Seaside.png" class="slide" alt="Seaside">
+              <img src="img/diving.svg" class="slide active" alt="Diving">
+              <img src="img/harbor.svg" class="slide" alt="Harbor">
+              <img src="img/isla.svg" class="slide" alt="Isla">
+              <img src="img/Seaside.svg" class="slide" alt="Seaside">
             </div>
             <div class="progress-bar-container">
               <div class="progress-bar active"></div>
@@ -99,48 +107,53 @@
               <div class="progress-bar"></div>
               <div class="progress-bar"></div>
             </div>
-          </section>
+          </section>          
     </header>
 
     <main>
 
         <section class="containerSL">
-            <div class="prev" onclick="plusSlides(-1)">❮</div>
+            <div class="prev" onclick="plusSlides(-1)"><img src="img/icone-seta-esquerda.png" alt="" id="icone-seta"></div>
             <div class="slidersection">
-              <div class="card">
-                <img src="img/f1.png" alt="1">
-                <p>CATEGORIA 1</p>
-              </div>
-              <div class="card">
-                <img src="img/f2.png" alt="2">
-                <p>CATEGORIA 2</p>
-              </div>
-              <div class="card">
-                <img src="img/f3.png" alt="3">
-                <p>CATEGORIA 3</p>
-              </div>
-              <div class="card">
-                <img src="img/f4.png" alt="4">
-                <p>CATEGORIA 4</p>
-              </div>
+                <div class="card">
+                    <a href="#"><img src="img/icone-vestidos.png" alt="1" ></a>
+                    <a href="#"><p>Vestidos</p></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="img/icone-biquini.png" alt="2"></a>
+                    <a href="#"><p>Trajes de banho</p></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="img/icone-calçados.png" alt="3"></a>
+                    <a href="#"><p>Calçados</p></a>
+                </div>
+                <div class="card">
+                    <a href="#"><img src="img/icone-saidas-de-praia.png" alt="4"></a>
+                    <a href="#"><p>Saídas de praia</p></a>
+                </div>
             </div>
+            
             <div class="slidersection">
                 <div class="card">
-                  <img src="img/f5.png" alt="5">
-                  <p>CATEGORIA 5</p>
+                    <a href="#"><img src="img/icone-chapeis.png" alt="5"></a>
+                    <a href="#"><p>Sombrinhas</p></a>
                 </div>
                 <div class="card">
-                  <img src="img/f6.png" alt="6">
-                  <p>CATEGORIA 6</p>
+                    <a href="#"><img src="img/icone-shorts.png" alt="6"></a>
+                    <a href="#"><p>Shorts</p></a>
                 </div>
                 <div class="card">
-                  <img src="img/f7.png" alt="7">
-                  <p>CATEGORIA 7</p>
+                    <a href="#"><img src="img/icone-bolsas.png" alt="7"></a>
+                    <a href="#"><p>Bolsas</p></a>
                 </div>
-              </div>
-            <div class="next" onclick="plusSlides(1)">❯</div>
+                <div class="card">
+                    <a href="#"><img src="img/icone-aderecos.png" alt="7"></a>
+                    <a href="#"><p>Adereços</p></a>
+                </div>
+            </div>
+            <div class="next" onclick="plusSlides(1)"><img src="img/icone-seta-direita.png" alt="" id="icone-seta"></div>
         </section>
-
+        
         <section id="catalogo">
             <div class="containerCA">
                 <h2 id="tittleCA">NOVIDADES</h2>
@@ -273,7 +286,10 @@
                 </div>
             </div>
         </section>
-        
+
+        <!-- <section class="designer">
+           
+        </section> -->
 
         <div class="containerPR">
             <div class="image-grid">
@@ -307,20 +323,31 @@
           
 
         <section class="containerCD">
-            <h1 class="titulo">CADASTRE-SE</h1>
-            <h4 class="texto">FAZER O MESMO DOMÍNIO E REALIZAR O CADASTRO</h4>
+            <div class="formulario">
+                <h1 class="titulo">CADASTRE-SE</h1>
+                <h4 class="texto">Cadastre-se agora e fique por dentro de todas as novidades, lançamentos exclusivos, descontos imperdíveis, conteúdos especiais e muito mais que preparamos especialmente para você!</h4>
 
-            <div class="campo">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Endereço de e-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <button class="botão">cadastrar-se</button>
             </div>
-
-            <div class="campo">
-                <label for="email">Endereço de e-mail:</label>
-                <input type="email" id="email" name="email">
+            
+            <div class="images">
+                <div class="bloco1"><img src="img/bolsas.jpg" alt=""></div>
+                <div class="bloco2">
+                    <img src="img/lendo.jpg" alt="" id="img1">
+                    <img src="img/moletom.png" alt="" id="img2">
+                </div>
             </div>
-
-            <button class="botão">cadastrar-se</button>
+            
         </section>
     </main>
 
@@ -332,9 +359,7 @@
                         <img src="img/imagotipoBranco.png" style="width: 170px;">
                         <hr class="linha">
 
-                        <p>not a good thing for you guys but it
-                            would have to keep you in a Blue spot
-                            for the gossip </p>
+                        <p>Uma marca que valoriza não apenas a elegância, mas também o conforto, oferecendo produtos sofisticados de qualidade.</p>
                       
                     </div>
                 </div>
@@ -367,7 +392,7 @@
                         <a href="./sobre-nos/index.html" target="_blank">Contatos</a>
                     </div>
                     <div id="phone">
-                        <a href="./sobre-nos/index.html">Sobre nós</a>
+                        <a href="sobre-nos.html" target="_blank">Sobre nós</a>
                     </div>
                     <div id="phone">
                         <a href="./sobre-nos/index.html" target="_blank">Politica de Privacidade</a>

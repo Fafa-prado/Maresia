@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
 body{
     overflow-x: hidden;
 }
 .footer-container {
-    background-color: #142a2e;
-    ;
+    background-color: #142a2e;;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -45,6 +46,7 @@ body{
 .footer-section1 p {
     margin-top: 20px;
     font-size: 14px;
+    margin-left: 35px;
     color: #fff;
     line-height: 1.6;
 }

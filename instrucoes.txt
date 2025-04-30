@@ -6,3 +6,61 @@ cor3 - marrom avermelhado #992e04
 cor4 - verde água escuro #0c6f72
 cor5 - vinho #720c2e
 cor6 - branco #ffff
+
+ <div class="profile-card">
+                <div class="profile-img">
+                    <img src="img/carolBassi.png" alt="Foto de Valentina">
+                </div>
+                <div class="profile-text">
+                    <h1>Carol Bassi</h1>
+                    <p>Foi um prazer te chamarem de amor não só houvesse teu desejo muito marcante e saúde mental e física da mulher, 
+                    mas também a minha esposa e o espaço de paz e não da minha risada que mora no teu riso tão apenas charmoso e carente na sua caminhada 
+                    teve o apelido do proprietário e o nome da dona da casa da musa.</p>
+</div>
+
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.profile-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #235354;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    height: 600px;
+}
+
+.profile-img img {
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    border-top-left-radius: 300px;
+    border-bottom-left-radius: 300px;
+    object-fit: cover;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 800px;
+    padding: 20px;
+    color: #235354;
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.profile-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #855032;
+  
+}

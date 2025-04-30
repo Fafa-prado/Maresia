@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+.bloco-principal {
+    display: flex;
+    padding: 20px;
+    background-color: #214A53;
+    color: white;
+    gap: 40px; 
+   
+    
+}
+
+.bloco-secundario {
+    display: flex;
+    background-color: #8e9e8d;
+    color: white;
+    max-width: 350px;
+    margin-top: 25px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+
+.bloco-secundario1{
+    max-width: 550px;
+    margin-top: 15px;
+    margin-left: 55px;
+}
+.bloco-terciario {
+    display: flex;
+    padding-bottom: 35px;
+    color: black;
+    margin-left: 40px; /* Adiciona espaço lateral */
+}
+
+.tudo-box {
+    display: flex;
+    gap: 40px;
+    padding: 30px;
+    background-color: #214A53;
+    color: white;
+    align-items:center;
+    flex-wrap: nowrap;
+    margin-left: 5px;
+    justify-content: center;
+
+    
+}
+
+.tudo .foto {
+    width: 250px;
+    height: 450px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.foto2 {
+    width: 150px;
+    height: AUTO;
+}
+
+.foto3 {
+    padding-top: 35px;
+    padding-left: 350px;
+}
+
+.foto3 img {
+    height: 400px;
+    width: 400px;
+}
+
+.titulo {
+    letter-spacing: 6px;
+    line-height: 1.2;
+    font-weight: 20;
+    transform: translateY(-9px);
+    width: 100%;
+    font-size: 35px;
+}
+
+.titulo2 {
+    letter-spacing: 2px;
+    line-height: 1;
+    font-weight: 4;
+    padding-left: 35px;
+    font-size: 12px;
+}
+
+.titulo3 {
+    padding-top: 40px;
+    font-size: 25px;
+    width: 250px;
+}
+
+.texto {
+    padding-top: 75px;
+    font-size: 12px;
+}
+
+.texto2 {
+   max-width: 850px;
+}
+
+.texto-box2 {
+    font-size: 12px;
+    text-align: justify;
+    padding-top: 10px;
+    line-height: 1.4;
+    margin-top: -9px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.texto-box3 {
+    padding-top: 55px;
+    font-size: 12px;
+    padding-right: 100px;
+}
+/* 
+.logo-box {
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 0, 0);
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 5px;
+    text-align: center;  
+} */
+
+.logo-box img {
+    width: 80px;
+}
+
+.logo-box p {
+    font-size: 12px;
+}
+
+/* Bloco de contatos */
+.containerCD {
+    max-width: 300px;
+    background-color: #214A53;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    padding-top: 45px;
+}
+
+.containerCD h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    letter-spacing: 7px;
+    font-weight: 20;
+}
+
+.subtext {
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 1.9;
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+}
+
+.containerCD input {
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid white;
+    color: white;
+    line-height: 2;
+    /* padding-left: 80px; */
+    width: 250px;
+}
+
+.containerCD textarea {
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 1.5px solid white;
+    color: white ;
+    line-height: 2;
+    width: 250px;
+    resize: none;
+    overflow: hidden;
+    font-family: inherit;
+    font-size: 16px;
+    height: 100px;
+    padding: 7px;
+}
+
+
+.containerCD input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
+.botão {
+    padding: 10px 20px;
+    background-color: #e5d5b8;
+    color: #153158;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: lowercase;
+    margin-left: 90px;
+}
+
+hr{
+    all: unset;
+    display: block;
+    width: 1px;
+    height: 520px;
+    background-color: white;
+    margin-top: 50px;
+}
+

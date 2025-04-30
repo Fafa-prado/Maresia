@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maresia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sobre-nos/sobrenos.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="topo">
+            <div class="menu">
+                <img src="img/menu-icon-black.png" style="width: 25px; height: 25px;" alt="Menu" class="icone-menu">
+                <span class="separador">|</span>
+                <div class="texto-menu">menu</div>
+            </div>
+            <div class="logo">
+                <img src="img/imagotipo-bege.png" alt="logo" class="logo-foto">
+            </div>
+            <div class="acoes">
+                <a href="cadastro.html">
+                    <img src="img/conta.png" alt="Entrar" class="icone-conta">
+                </a>
+                <a href="cadastro.html">
+                    <div class="texto-entrar">entrar</div>
+                </a>
+                <img src="img/sacolas-de-compras.png" alt="Carrinho" class="icone-carrinho">
+            </div>
+        </div>
+
+
+
+
+        <!-- Menu lateral -->
+        <div class="menu-lateral" id="menuLateral">
+            <div class="menu-fechar-container">
+                <img src="img/menu-icon.png" style="width: 25px; height: 25px;" alt="Menu" class="icone-menu"
+                    onclick="fecharMenu()">
+                <div class="menu-fechar" onclick="fecharMenu()"><img src="img/x.png" id="x"></div>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li>
+                        <button class="submenu-toggle">Produtos ▾</button>
+                        <ul class="submenu">
+                            <li><a href="#">Saídas de Praia</a></li>
+                            <li><a href="#">Biquínis</a></li>
+                            <li><a href="#">Adereços</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="submenu-toggle">Coleções ▾</button>
+                        <ul class="submenu">
+                            <li><a href="#">Luxe</a></li>
+                            <li><a href="#">Essencial</a></li>
+                            <li><a href="#">Flora</a></li>
+                            <li><a href="#">Flow</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button class="submenu-toggle">Sobre Nós ▾</button>
+                        <ul class="submenu">
+                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Cadastro</a></li>
+                            <li><a href="#">Contatos</a></li>
+                            <li><a href="#">Termos de Privacidade</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Descontos</a></li>
+                    <li><a href="#">Compras</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="bloco-principal">
+
+            <!-- BLOCO FOTO + TÍTULO -->
+            <div class="tudo-box">
+                <div class="tudo">
+                    <img src="img/design.jpg" alt="foto" style="border-radius: 5p;" class="foto">
+                </div>
+                <div>
+                    <h1 class="titulo">DIRETORA<br>DE DESIGN</h1> 
+                    <p class="texto-box2"> FABIOLA PRADO É DESIGNER DE MODA NA MARESI​A, CONHECIDA POR SUA CRIATIVIDADE AUTÊNTICA, OLHAR SENSÍVEL PARA DETALHES E INSPIRAÇÃO NO ESTILO PRAIANO. SUAS CRIAÇÕES UNEM CONFORTO, ELEGÂNCIA E ORIGINALIDADE, DANDO VIDA ÀS COLEÇÕES DA MARCA COM UM TOQUE ÚNICO, MODERNO E NATURAL.
+                    </p>
+
+                    <div class="bloco-secundario">
+                        <img src="img/icon.png" alt="foto" class="foto2">
+
+                        <p class="titulo2">LOGO<br><br>INSPIRADA NA BELEZA NATURAL DO OCEANO, A LOGO DA CONCHA SIMBOLIZA PROTEÇÃO, LEVEZA E AUTENTICIDADE. SEU DESENHO REPRESENTA A ESSÊNCIA DA MARCA: FORTE, ELEGANTE E CONECTADA COM A ENERGIA DO MAR.
+                         </p>
+                      
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <hr>
+
+
+            <div class="bloco-secundario1">
+                  <!--TEXTO DO MEIO-->
+            <p class="texto-box3"> LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. VOLUPTATES DOLOREM EXPLICABO REICIENDIS, TEMPORIBUS NIHIL QUASI QUAE, VOLUPTATIBUS FUGA MAXIME QUIS LABORIOSAM. DOLOREMQUE FUGIT DOLORIBUS NOSTRUM QUIS, MAGNAM EXERCITATIONEM AUTEM AD REPREHENDERIT QUIA TEMPORA QUOD. VOLUPTATE EAQUE DELECTUS ENIM, CULPA AUTEM OMNIS LABORUM CUM! NIHIL ILLUM QUOD TEMPORA ID VOLUPTATUM FACILIS, MINIMA QUO RATIONE REPELLAT REPREHENDERIT VOLUPTATES LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. VOLUPTATES DOLOREM EXPLICABO REICIENDIS, TEMPORIBUS NIHIL QUASI QUAE, VOLUPTATIBUS FUGA MAXIME QUIS LABORIOSAM. DOLOREMQUE FUGIT DOLORIBUS NOSTRUM QUIS, MAGNAM EXERCITATIONEM AUTEM AD REPREHENDERIT QUIA TEMPORA QUOD. VOLUPTATE EAQUE DELECTUS ENIM, CULPA AUTEM OMNIS LABORUM CUM! NIHIL ILLUM QUOD TEMPORA ID VOLUPTATUM FACILIS, MINIMA QUO RATIONE REPELLAT REPREHENDERIT VOLUPTATES <br/> <br/>  LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. VOLUPTATES DOLOREM EXPLICABO REICIENDIS, TEMPORIBUS NIHIL QUASI QUAE, VOLUPTATIBUS FUGA MAXIME QUIS LABORIOSAM. DOLOREMQUE FUGIT DOLORIBUS NOSTRUM QUIS, MAGNAM EXERCITATIONEM AUTEM AD REPREHENDERIT QUIA TEMPORA QUOD. VOLUPTATE EAQUE DELECTUS ENIM, CULPA AUTEM OMNIS LABORUM CUM! NIHIL ILLUM QUOD TEMPORA ID VOLUPTATUM FACILIS, MINIMA QUO RATIONE REPELLAT REPREHENDERIT VOLUPTATES LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. VOLUPTATES DOLOREM EXPLICABO REICIENDIS, TEMPORIBUS NIHIL QUASI QUAE, VOLUPTATIBUS FUGA MAXIME QUIS LABORIOSAM. DOLOREMQUE FUGIT DOLORIBUS NOSTRUM QUIS, MAGNAM EXERCITATIONEM AUTEM AD REPREHENDERIT QUIA TEMPORA QUOD. VOLUPTATE EAQUE DELECTUS ENIM, CULPA AUTEM OMNIS LABORUM CUM! NIHIL ILLUM QUOD TEMPORA ID VOLUPTATUM FACILIS, MINIMA QUO RATIONE REPELLAT REPREHENDERIT VOLUPTATES</p>
+        
+            </div>
+            <hr>
+          
+            <!-- CONTATOS -->
+            <div class="containerCD">
+                <h1>CONTATOS</h1>
+                <p class="subtext">YOU CAN CALL US, JUST DISK BY OUR NUMBER 1374-1689, OR MAYBE SEND US A MESSE IN OUR EMAIL:</p>
+                <input type="text" placeholder="Nome">
+                <!-- <input type="email" placeholder="Endereço de e-mail"> -->
+                <textarea id="emailTexto" placeholder="Endereço de e-mail"></textarea>
+                <div>
+                <button class="botão">enviar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloco-terciario">
+           <div class="texto2">
+            <h1 class="titulo3">NOSSA HISTÓRIA</h1>
+            <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. VOLUPTATES DOLOREM EXPLICABO REICIENDIS, TEMPORIBUS NIHIL QUASI QUAE, VOLUPTATIBUS FUGA MAXIME QUIS LABORIOSAM. DOLOREMQUE FUGIT DOLORIBUS NOSTRUM QUIS, MAGNAM EXERCITATIONEM AUTEM AD REPREHENDERIT QUIA TEMPORA QUOD. VOLUPTATE EAQUE DELECTUS ENIM, CULPA AUTEM OMNIS LABORUM CUM! NIHIL ILLUM QUOD TEMPORA ID VOLUPTATUM FACILIS, MINIMA QUO RATIONE REPELLAT REPREHENDERIT VOLUPTATES CULPA DOLOR. EUM EXPLICABO DESERUNT TEMPORIBUS, OBCAECATI IURE NON MAGNI VOLUPTATE AUT OPTIO NOSTRUM QUO. PERFERENDIS SUNT DEBITIS VOLUPTAS TENETUR, SEQUI QUOD ILLUM ERROR, AB MAGNAM NIHIL.LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT. VOLUPTATES DOLOREM EXPLICABO REICIENDIS, TEMPORIBUS NIHIL QUASI QUAE, VOLUPTATIBUS FUGA MAXIME QUIS LABORIOSAM. DOLOREMQUE FUGIT DOLORIBUS NOSTRUM QUIS, MAGNAM EXERCITATIONEM AUTEM AD REPREHENDERIT QUIA TEMPORA QUOD. VOLUPTATE EAQUE DELECTUS ENIM, CULPA AUTEM OMNIS LABORUM CUM! NIHIL ILLUM QUOD TEMPORA ID VOLUPTATUM FACILIS, MINIMA QUO RATIONE REPELLAT REPREHENDERIT VOLUPTATES CULPA DOLOR. EUM EXPLICABO DESERUNT TEMPORIBUS, OBCAECATI IURE NON MAGNI VOLUPTATE AUT OPTIO NOSTRUM QUO. PERFERENDIS SUNT DEBITIS VOLUPTAS TENETUR, SEQUI QUOD ILLUM ERROR, AB MAGNAM NIHIL.</p>
+        </div>
+            <div class="foto3">
+                <img src="img/coqueiro.jpg" alt="foto" >
+        </div>
+
+        <script src="js/banner.js"></script>
+        <script src="js/header.js"></script>
+        
+    </header>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-sections">
+                <div class="footer-section1">
+                    <div class="icons-footer">
+                        <img src="img/imagotipoBranco.png" style="width: 170px;">
+                        <hr class="linha">
+
+                        <p>not a good thing for you guys but it
+                            would have to keep you in a Blue spot
+                            for the gossip </p>
+                      
+                    </div>
+                </div>
+        
+                <div class="footer-section2">
+                    <div class="po2">
+                    <h1 id="tittle-footer">Serviços</h1>
+                    <div id="phone">   
+                        <a href="./sobre-nos/index.html">Cadastro</a>
+                    </div>
+                    <div id="phone">
+                        <a href="./sobre-nos/index.html" target="_blank">Descontos</a>
+                    </div>
+                    <div id="phone">
+                        <a href="./sobre-nos/index.html">Coleções</a>
+                    </div>
+                    <div id="phone">
+                        <a href="./sobre-nos/index.html" target="_blank">Designer</a>
+                    </div>
+                </div>
+                </div>
+
+                <div class="footer-section3">
+                    <div class="po">
+                    <h1 id="tittle-footer">Empresa</h1>
+                    <div id="phone">
+                        <a href="./sobre-nos/index.html">Central de mídia</a>
+                    </div>
+                    <div id="phone">
+                        <a href="./sobre-nos/index.html" target="_blank">Contatos</a>
+                    </div>
+                    <div id="phone">
+                        <a href="./sobre-nos/index.html">Sobre nós</a>
+                    </div>
+                    <div id="phone">
+                        <a href="./sobre-nos/index.html" target="_blank">Politica de Privacidade</a>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="footer-section4">
+                    <h2 id="tittle-footer">Nos siga em nossas 
+                     <br>   
+                        Redes Sociais!</h2>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="img/LogoInstagram.png" style="width: 35px;">
+                        </a>
+                        <a href="https://x.com/i/flow/login" target="_blank">
+                            <img src="img/logoTwiter.png" style="width: 35px;">
+                        </a>
+                        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Dpt_BR" target="_blank">
+                            <img src="img/LogoFacebook.png" style="width: 35px;">
+                        </a>
+                        <a href="https://br.pinterest.com/" target="_blank">
+                            <img src="img/logoPinterest.png" style="width: 35px;">
+                        </a>
+                        
+                       
+                    </div>
+                </div>
+
+            </div>
+        
+           <!-- <div id="footer-name">
+                <a href="index.html">©MARESIA</a>
+            </div>  -->
+        </div>
+        
+        
+        
+    </footer>  
+</body>
+
+</html>
