@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maresia</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            min-height: 100dvh;
+
+            font-family: "Poppins", sans-serif;
+
+            background-image: url("https://i.postimg.cc/15yVS1pL/fundo.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            isolation: isolate;
+        }
+
+        /* Overlay preto */
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+
+            background-color: rgba(0, 0, 0, 0.6);
+
+            z-index: -1;
+        }
+
+        .conteudo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 130px;
+        }
+
+        .img img {
+            width: 110px;
+            height: auto;
+            transform: rotate(90deg);
+        }
+
+        p {
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            text-align: center;
+            margin: 0;
+        }
+
+        button {
+            padding: 12px 30px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            color: #ffff;
+            cursor: pointer;
+            font-size: 15px;
+            font-family: inherit;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* TABLETS */
+        @media (min-width: 600px) and (max-width: 1024px) {
+
+            .img {
+                height: 160px;
+            }
+
+            .img img {
+                width: 135px;
+            }
+
+            p {
+                font-size: 19px;
+            }
+
+            button {
+                font-size: 17px;
+                padding: 14px 38px;
+            }
+
+            .conteudo {
+                gap: 20px;
+            }
+        }
+
+        /* CELULARES */
+        @media (max-width: 599px) {
+
+            body {
+                padding: 15px;
+                background-position: center;
+            }
+
+            .conteudo {
+                gap: 12px;
+            }
+
+            .img {
+                height: 110px;
+            }
+
+            .img img {
+                width: 95px;
+            }
+
+            p {
+                font-size: 14px;
+                max-width: 280px;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 11px 26px;
+                margin-top: 15px;
+            }
+        }
+
+        /* CELULARES MUITO PEQUENOS */
+        @media (max-width: 360px) {
+
+            .img img {
+                width: 85px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+
+            button {
+                font-size: 13px;
+                padding: 10px 22px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="conteudo">
+
+        <div class="img">
+            <img src="img/logo.png" alt="Logo Maresia">
+        </div>
+
+        <p>
+            Seu próximo destino de verão começa aqui.<br>
+            Descubra a Maresia!
+        </p>
+
+        <button onclick="window.location.href='https:nathalianiyama.github.io/Maresia-diario'">
+            Acesse o site
+        </button>
+
+    </div>
+
+</body>
+
+</html>
